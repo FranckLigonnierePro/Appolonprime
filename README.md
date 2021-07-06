@@ -1,4 +1,4 @@
-# netflux
+# Appolonprime
 
 ## Project setup
 ```
