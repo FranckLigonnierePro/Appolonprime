@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #0f171e;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+h2 {
+  margin: 0;
+  margin-left: 40px;
+  font-size: 16px;
+  color: rgb(207, 207, 207);
+}
+
+.searchBar {
+  background-color: #1b2530;
+}
+
+.carouhead {
+  margin-top: 50px;
+}
+
+.carouNews {
+  margin-bottom: 10px;
+}
+
+.linkCarou {
+  margin: 0;
+  font-size: 12px;
+  text-decoration: none;
+  color: #116bfd;
+}
+
+.navbar {
+  background-color: #1b2530;
+}
+
+.lanav {
+  margin: auto 40px;
+}
+
+li {
+  margin: 5px auto;
+}
+
+.liens {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-right: 30px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: rgb(207, 207, 207);
+  transition: all 0.5s;
+}
+
+.liens:hover {
+  color: white;
+}
+
+.btnNav {
+  color: #116bfd;
+}
+
+.liensAccueil {
+  padding-left: 5px;
+  color: #116bfd;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  color: rgb(207, 207, 207) !important;
+}
+
+.imgCar {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card {
+  width: 250px;
+  height: 150px;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  position: relative;
+}
+
+.card .imgBack {
+  display: none;
+  transition: all 0.5s;
+}
+
+h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title p {
+  margin: 0;
+}
+
+.card:hover {
+  width: 250px;
+  height: 340px;
+}
+
+.card:hover .imgBack {
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.card:before {
+  border-radius: 4px;
+  border: solid 2px #116bfd;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(
+    to top,
+    rgba(27, 37, 48, 1),
+    rgba(27, 37, 48, 1) 50%,
+    rgba(27, 37, 48, 0.5) 60%,
+    rgba(27, 37, 48, 0.5) 60%,
+    transparent 100%
+  );
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card .card-titre {
+  margin-top: 160px;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  color: #fff;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.trunc-text {
+  overflow: hidden;
+  font-size: 12px;
+  text-align: justify;
+  position: relative;
+}
+
+
+
+.card:hover .card-titre {
+  opacity: 1;
+  transform: translatey(0px);
+}
+
+.allCard {
+  margin: auto;
+  padding-left: 30px;
+}
+
+.prev {
+  color: rgb(207, 207, 207);
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+}
+
+.next {
+  color: rgb(207, 207, 207);
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+footer {
+  background-color: #1b2530;
+}
+
+.films {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.card-img2 {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.card2 {
+  width: 250px;
+  height: 340px;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  position: relative;
+}
+.card2:before {
+  border-radius: 4px;
+  border: solid 2px #116bfd;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(
+    to top,
+    rgba(27, 37, 48, 1),
+    rgba(27, 37, 48, 1) 50%,
+    rgba(27, 37, 48, 0.5) 60%,
+    rgba(27, 37, 48, 0.5) 60%,
+    transparent 100%
+  );
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card2:hover::before {
+  opacity: 1;
+}
+
+.card2 .card-titre {
+  margin-top: 160px;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  color: #fff;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.card2:hover .card-titre {
+  opacity: 1;
+  transform: translatey(0px);
+}
+
+.filmDetails {
+  margin-top: 120px;
+  color: rgb(207, 207, 207);
+}
+
+.filmDetails h2 {
+  margin: 0;
+  font-size: 36px;
+}
+.filmDetails h4 {
+  font-size: 36px;
+}
+
+.profilePic {
+  border-radius: 10px;
+  width: 10vh;
+  height: 14vh;
+}
+
+.profileCard {
+  color: rgb(207, 207, 207);
+  width: 100px;
+  height: 200px;
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+
+.posterDetails {
+  width: 80%;
+}
+
+.overview {
+  text-align: justify;
+}
